@@ -14,7 +14,7 @@
 #include <print>
 #include <vector>
 
-#include "Affichage.h"
+#include "affichage.h"
 
 // =================================================================
 // Entiers non signés

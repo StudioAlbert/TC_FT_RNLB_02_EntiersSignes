@@ -4,19 +4,20 @@ Tous les exemples de code du cours, prêts à compiler et à modifier.
 
 | Fichier | Rôle |
 |---|---|
-| `src/EntiersSignes.h` | **Toutes les démos**, une fonction par slide, dans l'ordre du deck |
-| `src/Affichage.h/.cpp` | Outils d'affichage : titre de slide, bits d'un octet, pause |
-| `src/main.cpp` | Enchaîne les démos, partie par partie |
+| `01_entiers_signes/include/entiers_signes.h` | **Toutes les démos**, une fonction par slide, dans l'ordre du deck |
+| `01_entiers_signes/include/affichage.h` | Outils d'affichage : titre de slide, bits d'un octet, pause |
+| `01_entiers_signes/main.cc` | Enchaîne les démos, partie par partie |
 
 Chaque fonction porte en commentaire le nom de sa slide, et l'affiche en première ligne.
 
 ## Compiler et lancer
 
-```bash
+```powershell
 cmake -S . -B build
 cmake --build build
-./build/EntiersSignes        # Windows : build\Debug\EntiersSignes.exe
 ```
+
+Puis `build/01_entiers_signes/01_entiers_signes.exe`.
 
 Deux avertissements de compilation sont **voulus** : la comparaison signé / non signé
 (`melange`) et la boucle `i >= 0` toujours vraie (`piegeNonSigne`). Lisez-les.
@@ -26,7 +27,7 @@ Deux avertissements de compilation sont **voulus** : la comparaison signé / non
 ```bash
 cmake -S . -B build-ub -DSANITIZE=ON
 cmake --build build-ub
-./build-ub/EntiersSignes
+./build-ub/01_entiers_signes/01_entiers_signes
 ```
 
 Le programme signale `signed integer overflow` à la ligne de `INT_MAX + 1`.

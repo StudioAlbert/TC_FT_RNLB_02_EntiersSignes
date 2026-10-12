@@ -3,11 +3,12 @@
 // Les démos s'enchaînent dans l'ordre du deck. Gardez EntiersSignes.h ouvert à côté :
 // chaque fonction porte le nom de sa slide.
 
-#include "Affichage.h"
-#include "EntiersSignes.h"
+#include "affichage.h"
+#include "entiers_signes.h"
 
 int main()
 {
+
     // Entiers non signés
     pacMan();
     nBits();
@@ -36,4 +37,5 @@ int main()
     mesurerSaPlateforme();
     typesDeTailleFixe();
     return 0;
+    
 }
