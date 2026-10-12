@@ -7,6 +7,7 @@ Tous les exemples de code du cours, prêts à compiler et à modifier.
 | `01_entiers_signes/include/entiers_signes.h` | **Toutes les démos**, une fonction par slide, dans l'ordre du deck |
 | `01_entiers_signes/include/affichage.h` | Outils d'affichage : titre de slide, bits d'un octet, pause |
 | `01_entiers_signes/main.cc` | Enchaîne les démos, partie par partie |
+| `02_selon_la_plateforme/main.cc` | Les `sizeof` à coller dans [Compiler Explorer](https://godbolt.org) pour comparer x64 msvc, ARM64 gcc, AVR gcc |
 
 Chaque fonction porte en commentaire le nom de sa slide, et l'affiche en première ligne.
 

@@ -10,3 +10,4 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 option(SANITIZE "Active -fsanitize=undefined" OFF)
 
 add_subdirectory(01_entiers_signes)
+add_subdirectory(02_selon_la_plateforme)
